@@ -1,6 +1,6 @@
 # RetentionIQ Pro
 
-**AI-powered customer retention dashboard — predict churn before it happens.**
+**AI-powered customer retention dashboard , predict churn before it happens.**
 
 RetentionIQ Pro gives businesses a clear view of which customers are at risk of leaving, why, and what to do about it. Built with React, it surfaces churn predictions, retention probabilities, and personalized action recommendations in a clean, actionable dashboard.
 
@@ -8,7 +8,7 @@ RetentionIQ Pro gives businesses a clear view of which customers are at risk of 
 
 ## Overview
 
-Customer churn is expensive and often invisible until it's too late. RetentionIQ Pro addresses this by analyzing customer behavior signals — spending patterns, support ticket volume, tenure — and generating a churn risk score alongside concrete retention strategies for each individual customer.
+Customer churn is expensive and often invisible until it's too late. RetentionIQ Pro addresses this by analyzing customer behavior signals ,spending patterns, support ticket volume, and generating a churn risk score alongside concrete retention strategies for each individual customer.
 
 The goal is simple: give customer success and sales teams the information they need to act before a customer walks out the door.
 
@@ -20,7 +20,7 @@ The goal is simple: give customer success and sales teams the information they n
 A snapshot of the individual customer record including their ID, monthly spend, support ticket count, and tenure. These are the input signals that drive the prediction.
 
 **Prediction Results**
-A churn risk classification (Low, Medium, or High) paired with a retention probability score. For example, a customer with 5 support tickets, $120/month in spend, and 12 months of tenure might surface as High churn risk with a 78% retention probability — meaning there is still a meaningful window to act.
+A churn risk classification (Low, Medium, or High) paired with a retention probability score. For example, a customer with 5 support tickets, $120/month in spend, and 12 months of tenure might surface as High churn risk with a 78% retention probability meaning there is still a meaningful window to act.
 
 **Recommendations**
 A targeted action list generated for that customer, such as offering a loyalty discount, sending personalized promotions, scheduling outreach, or escalating to premium support. Recommendations are specific to the customer profile, not generic.
@@ -83,8 +83,3 @@ Ideas for extending this project further:
 
 ---
 
-## Author
-
-**Kerima Mussa** — [GitHub](https://github.com/Kerima-001) · [LinkedIn](https://linkedin.com/in/kerima-mussa-a72735277)
-
-> *Building data-driven tools that help businesses make better decisions.*
