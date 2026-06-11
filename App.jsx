@@ -30,11 +30,11 @@ function getRisk(prob) {
 
 function getRecs(prob, tickets, spend, tenure, sat) {
     const recs = [];
-    if (tickets > 8) recs.push({ icon: "🎧", accent: RED, title: "Escalate to premium support", sub: "High ticket volume — unresolved friction is the top churn driver" });
-    if (spend < 100) recs.push({ icon: "🏷️", accent: AMBER, title: "Offer a loyalty discount", sub: "Low spend detected — a targeted offer can re-engage this customer" });
-    if (sat < 5) recs.push({ icon: "📞", accent: RED, title: "Schedule direct outreach", sub: "Low satisfaction score — personal contact is strongly recommended" });
-    if (tenure < 12) recs.push({ icon: "🎁", accent: TEAL, title: "Send onboarding follow-up", sub: "Early-stage account — nurturing now builds long-term loyalty" });
-    if (prob > 75) recs.push({ icon: "⭐", accent: TEAL, title: "Enroll in loyalty program", sub: "Healthy customer — reward them to sustain momentum" });
+    if (tickets > 8) recs.push({ icon: "🎧", accent: RED, title: "Escalate to premium support", sub: "High ticket volume - unresolved friction is the top churn driver" });
+    if (spend < 100) recs.push({ icon: "🏷️", accent: AMBER, title: "Offer a loyalty discount", sub: "Low spend detected - a targeted offer can re-engage this customer" });
+    if (sat < 5) recs.push({ icon: "📞", accent: RED, title: "Schedule direct outreach", sub: "Low satisfaction score - personal contact is strongly recommended" });
+    if (tenure < 12) recs.push({ icon: "🎁", accent: TEAL, title: "Send onboarding follow-up", sub: "Early-stage account - nurturing now builds long-term loyalty" });
+    if (prob > 75) recs.push({ icon: "⭐", accent: TEAL, title: "Enroll in loyalty program", sub: "Healthy customer - reward them to sustain momentum" });
     if (!recs.length) recs.push({ icon: "📣", accent: PURPLE, title: "Send personalized promotions", sub: "Based on spend history and product usage patterns" });
     return recs;
 }
