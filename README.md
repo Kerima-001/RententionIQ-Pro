@@ -179,8 +179,3 @@ Connect sliders to the FastAPI backend so predictions run through the real model
 
 ---
 
-## Author
-
-**Kerima Mussa** — [GitHub](https://github.com/Kerima-001) · [LinkedIn](https://linkedin.com/in/kerima-mussa-a72735277)
-
-> *Building data-driven tools that help businesses make better decisions.*
