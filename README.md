@@ -29,10 +29,10 @@ Drag sliders for spend, tickets, tenure, and satisfaction and the retention prob
 Multiple pre-loaded customer profiles each with distinct data. Click any pill to load their signals and see how predictions differ.
 
 **Dynamic recommendations**
-Recommendations are generated from the current slider values — high tickets triggers premium support escalation, low satisfaction triggers direct outreach, early tenure triggers an onboarding follow-up.
+Recommendations are generated from the current slider values  high tickets triggers premium support escalation, low satisfaction triggers direct outreach, early tenure triggers an onboarding follow-up.
 
 **Alert system**
-The Send Alert button fires a color-coded notification — red for high-risk customers flagged to the team, green for healthy customers enrolled in loyalty tracking.
+The Send Alert button fires a color-coded notification red for high-risk customers flagged to the team, green for healthy customers enrolled in loyalty tracking.
 
 **Quantum module (experimental)**
 A Qiskit-powered Quantum Support Vector Machine encodes the same four customer features into qubit amplitudes using a ZZFeatureMap and classifies churn risk. Output is benchmarked against the classical model.
@@ -82,7 +82,7 @@ RententionIQ-Pro/
 
 ## How It Works
 
-**Step 1 — Database**
+**Step 1 - Database**
 `database.py` creates `retentioniq.db` with a customers table holding id, name, email, age, tenure, monthly spend, support tickets, satisfaction score, and churn label.
 
 ```sql
@@ -99,16 +99,16 @@ CREATE TABLE IF NOT EXISTS customers (
 )
 ```
 
-**Step 2 — Model training**
+**Step 2 - Model training**
 `train_model.py` reads `Customer Data.xlsx`, trains a scikit-learn classifier on the four behavioral features, and saves it to `churn_model.pkl`.
 
-**Step 3 — Prediction**
+**Step 3 -Prediction**
 `main.py` loads the trained model, runs predictions across all customer records, and writes churn labels back to the database.
 
-**Step 4 — Dashboard**
+**Step 4 - Dashboard**
 The React frontend reads prediction results and renders a live interactive dashboard. All slider changes trigger instant recalculation in the browser with no server round-trip needed.
 
-**Step 5 — Quantum module**
+**Step 5 - Quantum module**
 `quantum/quantum_churn.py` encodes the same four features into a quantum circuit using Qiskit's ZZFeatureMap, runs a QSVM, and prints a side-by-side accuracy comparison with the classical model.
 
 ```python
